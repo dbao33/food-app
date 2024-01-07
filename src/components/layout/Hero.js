@@ -3,7 +3,7 @@ import RightIcon from "../icons/RightIcon"
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero mt-4">
       <div className="py-8">
         <h1 className="text-4xl font-bold">
           Everything <br />
@@ -21,7 +21,7 @@ const Hero = () => {
             Order now
             <RightIcon />
           </button>
-          <button className="flex gap-2 py-2 text-gray-600 font-semibold">
+          <button className="flex gap-2 py-2 text-gray-600 rounded-full font-semibold">
             Learn More
             <RightIcon />
           </button>
