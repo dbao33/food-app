@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 
 const RegsiterPage = () => {
-  
+
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [creatingUser, setCreatingUser] = useState(false)
@@ -20,14 +20,13 @@ const RegsiterPage = () => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" }
     })
-    setCreatingUser(false)
-    console.log(response)
+
     if (response.ok) {
       setUserCreated(true)
     } else {
       setError(true)
     }
-
+    setCreatingUser(false)
   }
   return (
     <section className="mt-8">

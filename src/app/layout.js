@@ -1,7 +1,7 @@
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '../components/layout/Header'
-
+import {AppProvider} from '@/components/Menu/AppContext'
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
 export const metadata = {
@@ -15,8 +15,12 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
 
         <main className="max-w-4xl mx-auto p-4">
-          <Header />
-          {children}
+          <AppProvider>
+
+
+            <Header />
+            {children}
+          </AppProvider>
         </main>
 
         <footer className="border-t p-2 text-center text-gray-500 ">

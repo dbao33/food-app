@@ -16,12 +16,12 @@ const Hero = () => {
           a simple yet delicous joy in life
         </p>
 
-        <div className="flex gap-4 py-4">
-          <button className="flex gap-2 bg-primary text-white px-4 py-2 rounded-full">
+        <div className="flex py-4">
+          <button className="flex justify-center gap-2 bg-primary text-white px-4 py-2 rounded-full">
             Order now
             <RightIcon />
           </button>
-          <button className="flex gap-2 py-2 text-gray-600 rounded-full font-semibold">
+          <button className="flex gap-2 border-0 py-2 text-gray-500 rounded-full font-semibold">
             Learn More
             <RightIcon />
           </button>
